@@ -15,9 +15,9 @@ int main()
 	printf("\nEnter the col number = ");
 	scanf("%d",&col);
 	
-	for(i=1;i(3)<=row(2);i++)
+	for(i=1;i<=row;i++)
 	{
-		for(j=1;j(4)<=col(3);j++)
+		for(j=1;j<=col;j++)
 		{
 			printf("* ");
 		}
