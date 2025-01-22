@@ -23,10 +23,8 @@ int main()
 	s1.set(101,"Rahul");
 	Student s2;
 	s2.set(102,"Mahesh");
-	Student s3;
 	
 	s1.get();
 	s2.get();
-	s3.get();
 	return 0;
 }
