@@ -30,16 +30,16 @@ class Address
 		string city;
 		Student *ref;
 	public :
-		Address(string c,Student &obj)
+		Address(string c,Student *obj)
 		{
 			city = c;
 			ref = obj;
 		}
 		void display()
 		{
-			cout<<"\nId = "<<*ref.id;
-			cout<<"\nName = "<<*ref.name;
-			cout<<"\nGrade = "<<*ref.grd();
+			cout<<"\nId = "<<ref->id;
+			cout<<"\nName = "<<ref->name;
+			ref->grd();
 			cout<<"\nCity = "<<city;
 		}
 };
@@ -54,9 +54,9 @@ int main()
 	s2.name = "Dhyana";
 	s2.marks = 427;
 	
-	Address a1("Rajkot",s1);
+	Address a1("Rajkot",&s1);
 	a1.display();
-	Address a2("Surat",s2);
+	Address a2("Surat",&s2);
 	a2.display();
 	return 0;
 }
