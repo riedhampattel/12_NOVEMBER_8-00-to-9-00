@@ -6,19 +6,22 @@ class Student
 		int id;
 		string name;
 		int marks;//out of 500
-		double per = marks/5;
+		double per = double(marks)/(double)5;
 		char grade;
-		if(per<=35)
+		void grd()
 		{
-			grade = 'C';
-		}
-		else if(per<=80)
-		{
-			grade = 'B';
-		}
-		else
-		{
-			grade = 'A';
+			if(per<=35)
+			{
+				cout<<"C";
+			}
+			else if(per<=80)
+			{
+				cout<<"B";
+			}
+			else
+			{
+				cout<<"A";
+			}	
 		}
 };
 class Address
@@ -36,7 +39,7 @@ class Address
 		{
 			cout<<"\nId = "<<*ref.id;
 			cout<<"\nName = "<<*ref.name;
-			cout<<"\nGrade = "<<*ref.grade;
+			cout<<"\nGrade = "<<*ref.grd();
 			cout<<"\nCity = "<<city;
 		}
 };
