@@ -1,0 +1,7 @@
+w ---> create new file/write
+r ---> read
+
+fstream
+
+ifstream ---> read
+ofstream ---> write
