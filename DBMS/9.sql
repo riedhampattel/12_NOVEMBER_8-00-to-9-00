@@ -1,44 +1,35 @@
-BEGIN
-	DBMS_OUTPUT.PUT('HELLO WORLD!');
-	DBMS_OUTPUT.PUT_LINE('HOW ARE YOU?');
-END;
+select * from employees;
 
-BEGIN
-	DBMS_OUTPUT.PUT('A ');
-	DBMS_OUTPUT.PUT_LINE('B');
-	DBMS_OUTPUT.PUT('C ');
-	DBMS_OUTPUT.PUT('D');
-	DBMS_OUTPUT.PUT_LINE(' ');
-END;
+select employee_id,first_name,last_name from employees;
 
-DECLARE
-	X NUMBER := 10;
-	Y VARCHAR(20) := 'tops';
-	Z FLOAT := 56.23;
-BEGIN
-	DBMS_OUTPUT.PUT_LINE('THE VALUE OF X = '||X);
-	DBMS_OUTPUT.PUT_LINE('THE VALUE OF Y = '||Y);
-	DBMS_OUTPUT.PUT_LINE('THE VALUE OF Z = '||Z);
-END;
+create view personal_detail as select employee_id,first_name,last_name from employees;
 
-DECLARE -- FIRST BLOCK
-	X NUMBER := 10;
-BEGIN
-	DECLARE -- SECOND BLOCK
-		Y NUMBER := 20;
-	BEGIN
-		DECLARE -- THIRD BLOCK
-			Z NUMBER := 30;
-		BEGIN
-			DBMS_OUTPUT.PUT_LINE('THIRD BLOCK :');
-			DBMS_OUTPUT.PUT_LINE('THE VALUE OF X = '||X);
-			DBMS_OUTPUT.PUT_LINE('THE VALUE OF Y = '||Y);
-			DBMS_OUTPUT.PUT_LINE('THE VALUE OF Z = '||Z);
-		END; -- THIRD BLOCK
-		DBMS_OUTPUT.PUT_LINE('SECOND BLOCK :');
-		DBMS_OUTPUT.PUT_LINE('THE VALUE OF X = '||X);
-		DBMS_OUTPUT.PUT_LINE('THE VALUE OF Y = '||Y);
-	END; -- SECOND BLOCK
-	DBMS_OUTPUT.PUT_LINE('FIRST BLOCK :');
-	DBMS_OUTPUT.PUT_LINE('THE VALUE OF X = '||X);
-END; -- FIRST BLOCK
+select * from personal_detail;
+
+delimiter &&
+create procedure display()
+select * from employees;
+end &&
+
+call display();
+
+drop procedure display;
+
+delimiter &&
+create procedure display(in did int)
+begin
+select * from employees where department_id = did;
+end &&
+
+call display(90);
+call display(60);
+
+delimiter &&
+create procedure add_data(in id int,name varchar(25),a int)
+begin
+insert into customer values(id,name,a);
+end &&
+
+call add_data(106,'Rohan',54);
+
+select * from customer;
