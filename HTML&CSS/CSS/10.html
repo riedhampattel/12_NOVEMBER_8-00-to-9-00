@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+    }
+    div
+    {
+        text-align: center;
+        margin-top: -3rem;
+    }
+    img
+    {
+        background: none;
+        filter: drop-shadow(0px 0px 10px blue);
+    }
+    img:hover
+    {
+        filter: drop-shadow(0px 0px 10px brown);
+        transition: 1s ease;
+        transform: scale(1.1);
+    }
+    #btn
+    {
+        border: none;
+        margin-top: -25px;
+    }
+    #btn button
+    {
+        color: white;
+        height: 90px;
+        width: 260px;
+        font-size: 35px;
+        border: 5px solid white;
+        border-radius: 50px;
+        font-weight: 700;
+        padding: 0px 2rem;
+    }
+    button:hover
+    {
+        box-shadow: 0px 0px 20px brown;
+    }
+    #social
+    {
+        color: white;
+        font-size: 45px;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 2.5rem;
+    }
+    #social i
+    {
+        margin-right: 4rem;
+    }
+    #social i:hover
+    {
+        transform: scale(1.1);
+        transition: 1s ease;
+        text-shadow: 5px 5px 0px brown;
+    }
+</style>
+<body>
+    <div>
+        <img src="./image.png" alt="">
+    </div>
+    <div id="btn">
+        <button>Contact Us</button>
+    </div>
+    <div id="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+</body>
+</html>
