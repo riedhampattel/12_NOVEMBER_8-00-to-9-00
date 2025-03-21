@@ -115,3 +115,48 @@ section
     padding: 0.5rem 1rem;
     box-shadow: 5px 2px 0px brown;
 }
+.cards
+{
+    display: flex;
+    border: 3px solid brown;
+    box-shadow: 5px 5px 5px brown;
+    margin-bottom: 3rem;
+}
+.cards img
+{
+    height: 350px;
+    background: none;
+}
+.cards img:hover
+{
+    filter: drop-shadow(0px 0px 10px brown);
+    transition: 0.5s ease;
+}
+.card-text
+{
+    margin-top: 2rem;
+}
+.card-text h1
+{
+    font-size: 35px;
+}
+.price
+{
+    margin-top: 2rem;
+    display: flex;
+}
+.price p
+{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.price button
+{
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid brown;
+    padding: 0.5rem 1rem;
+    margin-left: 30rem;
+    box-shadow: 5px 5px 1px brown;
+}
