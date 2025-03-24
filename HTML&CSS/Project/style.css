@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,105 +9,105 @@
     color: white;
     font-family: "Poppins", sans-serif;
 }
-header
-{
+
+header {
     display: flex;
     justify-content: space-between;
     margin: 0rem 5rem;
 }
-#logo
-{
+
+#logo {
     margin: -2rem 0rem 3rem 0rem;
 }
-#navbar
-{
+
+#navbar {
     font-size: 25px;
     font-weight: 700;
     margin-top: 3rem;
 }
-#navbar a
-{
+
+#navbar a {
     margin-right: 2rem;
 }
-section
-{
+
+section {
     margin: 0rem 5rem;
 }
-.main-content h1
-{
+
+.main-content h1 {
     font-size: 40px;
     width: 550px;
     color: brown;
 }
-.main-content h3
-{
+
+.main-content h3 {
     font-size: 20px;
     margin-top: 0.5rem;
     color: burlywood;
 }
-.sub-content
-{
+
+.sub-content {
     width: 540px;
     margin-top: 1rem;
 }
-.btn
-{
+
+.btn {
     margin: 2rem 0rem;
 }
-.btn a
-{
+
+.btn a {
     border: 3px solid brown;
     font-size: 30px;
     font-weight: 700;
     padding: 0.5rem 1rem;
     box-shadow: 5px 5px 0px brown;
 }
-.image
-{
+
+.image {
     position: absolute;
     right: 6rem;
     top: 9rem;
 }
-.product-main
-{
+
+.product-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5rem;
     margin: -3rem 5rem 5rem 5rem;
 }
-.product-main div
-{
+
+.product-main div {
     border: 5px solid brown;
     border-radius: 30px;
     box-shadow: 0px 0px 20px brown;
 }
-.product-main div:hover
-{
+
+.product-main div:hover {
     box-shadow: 0px 0px 20px rgb(0, 229, 255);
     border: 5px solid rgb(0, 229, 255);
     transition: 0.5s ease;
     transform: scale(1.1);
 }
-.product-main div img
-{
+
+.product-main div img {
     height: 280px;
     background: none;
 }
-.product-title
-{
+
+.product-title {
     text-align: center;
     font-size: 22px;
     margin-top: -1rem;
     font-weight: 700;
 }
-.product-price
-{
+
+.product-price {
     text-align: center;
     font-size: 18px;
     margin-top: 0.5rem;
 }
-.product-main div button
-{
+
+.product-main div button {
     margin: 1rem 0rem 2rem 4rem;
     font-size: 20px;
     font-weight: 700;
@@ -115,44 +115,44 @@ section
     padding: 0.5rem 1rem;
     box-shadow: 5px 2px 0px brown;
 }
-.cards
-{
+
+.cards {
     display: flex;
     border: 3px solid brown;
     box-shadow: 5px 5px 5px brown;
     margin-bottom: 3rem;
 }
-.cards img
-{
+
+.cards img {
     height: 350px;
     background: none;
 }
-.cards img:hover
-{
+
+.cards img:hover {
     filter: drop-shadow(0px 0px 10px brown);
     transition: 0.5s ease;
 }
-.card-text
-{
+
+.card-text {
     margin-top: 2rem;
 }
-.card-text h1
-{
+
+.card-text h1 {
     font-size: 35px;
 }
-.price
-{
+
+.price {
     margin-top: 2rem;
     display: flex;
 }
-.price p
-{
+
+.price p {
     font-size: 25px;
     font-weight: 700;
     margin-top: 1rem;
 }
-.price button
-{
+
+.price button {
     font-size: 25px;
     font-weight: 700;
     border: 3px solid brown;
@@ -160,109 +160,110 @@ section
     margin-left: 30rem;
     box-shadow: 5px 5px 1px brown;
 }
-@media(max-width:450px)
-{
-    *
-    {
+
+@media(max-width:450px) {
+    * {
         background-color: bisque;
         color: black;
     }
-header
-{
-    display: block;
-    margin: 0rem;
-}
-#logo
-{
-    margin: -2rem 0rem 3rem 7rem;
-}
-#navbar
-{
-    font-size: 15px;
-    font-weight: 700;
-    margin-top: -7rem;
-    margin-left: 0.8rem;
-}
-#navbar a
-{
-    margin-right: 0.2rem;
-}
-section
-{
-    margin: 19rem 0rem;
-}
-.main-content h1
-{
-    font-size: 30px;
-    width: 400px;
-    text-align: center;
-}
-.main-content h3
-{
-    margin-left: 8rem;
-    color: black;
-}
-.sub-content
-{
-    width: 390px;
-    text-align: center;
-    margin-left: 1rem;
-}
-.btn
-{
-    margin: 2rem 7.5rem;
-}
-.image
-{
-    position: absolute;
-    left: 4rem;
-    top: 8rem;
-}
-.image img
-{
-    height: 300px;
-}
-.product-main
-{
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
-    margin-left: 4rem;
-    margin-top: -16rem;
-}
-.cards
-{
-    display: flex;
-    border: 3px solid brown;
-    box-shadow: 5px 5px 5px brown;
-    margin-bottom: 3rem;
-}
-.cards
-{
-    width: 400px;
-}
-.cards img
-{
-    height: 200px;
-    margin-left: -2.5rem;
-    margin-top: 2rem;
-}
-.card-text
-{
-    margin-top: 3rem;
-    margin-left: -2rem;
-}
-.card-text h1
-{
-    font-size: 25px;
-    width: 250px;
-}
-.card-text h3
-{
-    width: 250px;
-}
-.card-text p
-{
-    width: 230px;
-};
+
+    header {
+        display: block;
+        margin: 0rem;
+    }
+
+    #logo {
+        margin: -2rem 0rem 3rem 7rem;
+    }
+
+    #navbar {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: -7rem;
+        margin-left: 0.8rem;
+    }
+
+    #navbar a {
+        margin-right: 0.2rem;
+    }
+
+    section {
+        margin: 19rem 0rem;
+    }
+
+    .main-content h1 {
+        font-size: 30px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .main-content h3 {
+        margin-left: 8rem;
+        color: black;
+    }
+
+    .sub-content {
+        width: 390px;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .btn {
+        margin: 2rem 7.5rem;
+    }
+
+    .image {
+        position: absolute;
+        left: 4rem;
+        top: 8rem;
+    }
+
+    .image img {
+        height: 300px;
+    }
+
+    .product-main {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+        margin-left: 4rem;
+        margin-top: -16rem;
+    }
+
+    .cards {
+        display: flex;
+        border: 3px solid brown;
+        box-shadow: 5px 5px 5px brown;
+        margin-bottom: 3rem;
+    }
+
+    .cards {
+        width: 400px;
+    }
+
+    .cards img {
+        height: 200px;
+        margin-left: -2.5rem;
+        margin-top: 2rem;
+    }
+
+    .card-text {
+        margin-top: 3rem;
+        margin-left: -2rem;
+    }
+
+    .card-text h1 {
+        font-size: 25px;
+        width: 250px;
+    }
+
+    .card-text h3 {
+        width: 250px;
+    }
+
+    .card-text p {
+        width: 230px;
+    }
+
+    ;
 
 }
