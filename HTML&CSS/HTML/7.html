@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    div
+    {
+        border: 2px solid brown;
+        width: 450px;
+        height: 450px;
+        animation: demo 10s infinite;
+    }
+    @keyframes demo
+    {
+        0%,50%
+        {
+            border: 2px solid black;
+            transform: rotate(180deg);
+            background: linear-gradient(45deg,brown,orange,green);
+        }
+        50%,100%
+        {
+            border: 2px solid orange;
+            transform: rotate(360deg);
+            background: linear-gradient(45deg,orange,white,green);
+        }
+    }
+</style>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat repellat perspiciatis totam provident aliquid, optio nisi, cupiditate quia eum nam molestias cum et ullam dicta saepe, pariatur fuga temporibus dolor earum. Necessitatibus, veniam dolore et provident, animi, accusamus inventore dicta iure repudiandae fugit minima optio quisquam enim. Similique, dicta.</div>
+</body>
+</html>

@@ -160,3 +160,109 @@ section
     margin-left: 30rem;
     box-shadow: 5px 5px 1px brown;
 }
+@media(max-width:450px)
+{
+    *
+    {
+        background-color: bisque;
+        color: black;
+    }
+header
+{
+    display: block;
+    margin: 0rem;
+}
+#logo
+{
+    margin: -2rem 0rem 3rem 7rem;
+}
+#navbar
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: -7rem;
+    margin-left: 0.8rem;
+}
+#navbar a
+{
+    margin-right: 0.2rem;
+}
+section
+{
+    margin: 19rem 0rem;
+}
+.main-content h1
+{
+    font-size: 30px;
+    width: 400px;
+    text-align: center;
+}
+.main-content h3
+{
+    margin-left: 8rem;
+    color: black;
+}
+.sub-content
+{
+    width: 390px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.btn
+{
+    margin: 2rem 7.5rem;
+}
+.image
+{
+    position: absolute;
+    left: 4rem;
+    top: 8rem;
+}
+.image img
+{
+    height: 300px;
+}
+.product-main
+{
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    margin-left: 4rem;
+    margin-top: -16rem;
+}
+.cards
+{
+    display: flex;
+    border: 3px solid brown;
+    box-shadow: 5px 5px 5px brown;
+    margin-bottom: 3rem;
+}
+.cards
+{
+    width: 400px;
+}
+.cards img
+{
+    height: 200px;
+    margin-left: -2.5rem;
+    margin-top: 2rem;
+}
+.card-text
+{
+    margin-top: 3rem;
+    margin-left: -2rem;
+}
+.card-text h1
+{
+    font-size: 25px;
+    width: 250px;
+}
+.card-text h3
+{
+    width: 250px;
+}
+.card-text p
+{
+    width: 230px;
+};
+
+}
